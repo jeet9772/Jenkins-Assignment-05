@@ -49,6 +49,10 @@ Publish decision: Approve
 
 Same notification format as the declarative pipeline in Assignment 4 - confirms the scripted version also reports the approval outcome, not just the build status.
 
+
+
+<img width="1440" height="900" alt="Screenshot 2026-09-19 at 9 27 36 AM" src="https://github.com/user-attachments/assets/3c75e64d-a999-41b7-a2d2-54e2b3458454" />
+
 ### Email
 
 Matching email with the build status and publish decision in the subject line, `build.log` attached for reference.
