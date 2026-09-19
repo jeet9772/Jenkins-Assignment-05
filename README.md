@@ -26,6 +26,10 @@ The four boolean parameters give the user the option to skip any scan independen
 
 Also defined `SONARQUBE_ENV` and `SLACK_CHANNEL` as script variables at the top, pointing at the same `MySonarQube` server and `#jenkins-ci-alerts` channel used in Assignment 4.
 
+
+<img width="1440" height="900" alt="Screenshot 2026-09-19 at 9 21 17 AM" src="https://github.com/user-attachments/assets/7d6c648f-58cf-4e59-9f26-e9163010b831" />
+
+
 ## First run - success on build #1
 
 Full stage view confirms every required stage ran in the scripted pipeline: **Tool Install → Code Checkout → Build → Build & Analysis (the parallel stability/quality/coverage block) → Quality Gate → Generate Report → Approval for Publish → Publish Artifacts → Notifications**. SonarQube Quality Gate for `Spring3HibernateApp` came back **Passed**, and the built WAR (`Spring3HibernateApp.war`, 20.59 MiB) was archived as the last successful artifact - meaning the manual approval step was accepted and the publish stage actually executed.
