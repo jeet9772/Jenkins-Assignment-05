@@ -34,6 +34,10 @@ Also defined `SONARQUBE_ENV` and `SLACK_CHANNEL` as script variables at the top,
 
 Full stage view confirms every required stage ran in the scripted pipeline: **Tool Install → Code Checkout → Build → Build & Analysis (the parallel stability/quality/coverage block) → Quality Gate → Generate Report → Approval for Publish → Publish Artifacts → Notifications**. SonarQube Quality Gate for `Spring3HibernateApp` came back **Passed**, and the built WAR (`Spring3HibernateApp.war`, 20.59 MiB) was archived as the last successful artifact - meaning the manual approval step was accepted and the publish stage actually executed.
 
+
+<img width="1440" height="900" alt="Screenshot 2026-09-19 at 9 23 45 AM" src="https://github.com/user-attachments/assets/049db96c-9513-4222-b29f-0090a4fc4e3d" />
+
+
 ## Notifications
 
 ### Slack
